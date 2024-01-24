@@ -2,116 +2,183 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockeys Website-Assignment-03</title>
-    <!-- Daisy Ui and Tailwind link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <!-- Google Manrope Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind Custom Color -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                        "primary-color": '#FF4240',
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockeys Website-Assignment-03</title>
+  <!-- Daisy Ui and Tailwind link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- Google Manrope Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind Custom Color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            "primary-color": '#FF4240',
+          }
         }
-    </script>
-    <!-- Font-Awesome -->
-    <script src="https://kit.fontawesome.com/400d38c908.js" crossorigin="anonymous"></script>
-    <!-- Custom manrope Font -->
-    <style>
-        .manrope {
-            font-family: 'Manrope', sans-serif;
-        }
-    </style>
+      }
+    }
+  </script>
+  <!-- Font-Awesome -->
+  <script src="https://kit.fontawesome.com/400d38c908.js" crossorigin="anonymous"></script>
+  <!-- Custom manrope Font -->
+  <style>
+    .manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
+
 <body class="manrope">
-    <header class="container mx-auto">
-        <section>
-            <div class="nabvar mt-5 lg:my-14">
-                <div class="navbar bg-base-100">
-                    <div class="navbar-start">
-                      <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                        </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#424247]">
-                          <li><a class="text-primary-color">Home</a></li>
-                          <li><a>About</a></li>
-                          <li><a>Page</a></li>
-                          <li><a>Blogs</a></li>
-                          <li><a>Contact</a></li>
-                        </ul>
-                      </div>
-                      <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey<p class="text-primary-color -mx-2">'</p>s
-                      </a>
-                    </div>
-                    <div class="navbar-center hidden lg:flex">
-                      <ul class="menu menu-horizontal font-bold px-1 text-base text-[#424247]">
-                        <li><a class="text-primary-color ">Home</a></li>
-                          <li><a>About</a></li>
-                          <li><a>Page</a></li>
-                          <li><a>Blogs</a></li>
-                          <li><a>Contact</a></li>
-                      </ul>
-                    </div>
-                    <div class="navbar-end flex justify-end gap-6 items-center">
-                        <i class="fa-solid fa-magnifying-glass hidden lg:flex cursor-pointer"></i>
-                        <button class="btn btn-active text-white font-bold text-[18px] lg:text-xl bg-primary-color">Get Ticket</button>
-                    </div>
-                  </div>
-            </div>
-        </section>
-        <section class="container mx-auto">
-            <div class="relative mb-24">
-              <div class="relative carousel w-full">
-                <!-- First banner -->
-                <div id="slide1" class="carousel-item relative w-full h-[200px] lg:h-[550px] bg-[url(./image/1.png)] bg-no-repeat bg-contain lg:bg-cover object-cover bg-center rounded-2xl"> 
-                  <div class="absolute flex justify-center items-center gap-3 lg:gap-0 lg:justify-between transform translate-y-10 lg:-translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle border-none bg-black"><span class="text-white">❮</span></a> 
-                    <a href="#slide2" class="btn btn-circle border-none bg-black"><span class="text-white">❯</span></a>
-                  </div>
-                </div>
-                <!-- Second banner -->
-                <div id="slide2" class="carousel-item relative w-full h-[200px] lg:h-[550px] bg-[url(./image/banner3.avif)] bg-no-repeat bg-contain lg:bg-cover object-cover bg-center rounded-2xl"> 
-                    <div class="absolute flex justify-center items-center gap-3 lg:gap-0 lg:justify-between transform translate-y-10 lg:-translate-y-1/2 left-5 right-5 top-1/2 ">
-                      <a href="#slide1" class="btn btn-circle border-none bg-black"><span class="text-white">❮</span></a> 
-                      <a href="#slide3" class="btn btn-circle border-none bg-black"><span class="text-white">❯</span></a>
-                    </div>
-                  </div>
-                  <!-- third banner -->
-                <div id="slide3" class="carousel-item relative w-full h-[200px] lg:h-[550px] bg-[url(./image/banner4.avif)] bg-no-repeat bg-contain lg:bg-cover object-cover bg-center rounded-2xl"> 
-                    <div class="absolute flex justify-center items-center gap-3 lg:gap-0 lg:justify-between transform translate-y-10 lg:-translate-y-1/2 left-5 right-5 top-1/2">
-                      <a href="#slide2" class="btn btn-circle border-none bg-black"><span class="text-white">❮</span></a> 
-                      <a href="#slide1" class="btn btn-circle border-none bg-black"><span class="text-white">❯</span></a>
-                    </div>
-                  </div>
+  <header class="container mx-auto">
+    <section>
+      <div class="nabvar mt-5 lg:my-14">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
               </div>
-              <div class="bg-[#131318] rounded-lg w-[80%] mx-auto lg:w-1/2 lg:h-[165px] p-4 lg:p-8 space-y-[8px] lg:space-y-5 lg:absolute  lg:right-0 lg:bottom-0 mt-4 lg:m-8">
-                <h1 class="text-xl lg:text-2xl text-white font-extrabold">Meet all the heroes from the field</h1>
-                <p class="text-[#AFAFAF] font-medium text-base">
-                  Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.
-                </p>
-              </div>
+              <ul tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#424247]">
+                <li><a class="text-primary-color">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Page</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact</a></li>
+              </ul>
             </div>
-        </section>
-    </header>
-    <main>
+            <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey<p class="text-primary-color -mx-2">'</p>
+              s
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal font-bold px-1 text-base text-[#424247]">
+              <li><a class="text-primary-color ">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Page</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end flex justify-end gap-6 items-center">
+            <i class="fa-solid fa-magnifying-glass hidden lg:flex cursor-pointer"></i>
+            <button class="btn btn-active text-white font-bold text-[18px] lg:text-xl bg-primary-color">Get
+              Ticket</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto">
+      <div class="relative mb-10 lg:mb-24">
+        <div class="relative carousel w-full">
+          <!-- First banner -->
+          <div id="slide1"
+            class="carousel-item relative w-full h-[200px] lg:h-[550px] bg-[url(./image/1.png)] bg-no-repeat bg-contain lg:bg-cover object-cover bg-center rounded-2xl">
+            <div
+              class="absolute flex justify-center items-center gap-3 lg:gap-0 lg:justify-between transform translate-y-10 lg:-translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle border-none bg-black"><span class="text-white">❮</span></a>
+              <a href="#slide2" class="btn btn-circle border-none bg-black"><span class="text-white">❯</span></a>
+            </div>
+          </div>
+          <!-- Second banner -->
+          <div id="slide2"
+            class="carousel-item relative w-full h-[200px] lg:h-[550px] bg-[url(./image/banner3.avif)] bg-no-repeat bg-contain lg:bg-cover object-cover bg-center rounded-2xl">
+            <div
+              class="absolute flex justify-center items-center gap-3 lg:gap-0 lg:justify-between transform translate-y-10 lg:-translate-y-1/2 left-5 right-5 top-1/2 ">
+              <a href="#slide1" class="btn btn-circle border-none bg-black"><span class="text-white">❮</span></a>
+              <a href="#slide3" class="btn btn-circle border-none bg-black"><span class="text-white">❯</span></a>
+            </div>
+          </div>
+          <!-- third banner -->
+          <div id="slide3"
+            class="carousel-item relative w-full h-[200px] lg:h-[550px] bg-[url(./image/banner4.avif)] bg-no-repeat bg-contain lg:bg-cover object-cover bg-center rounded-2xl">
+            <div
+              class="absolute flex justify-center items-center gap-3 lg:gap-0 lg:justify-between transform translate-y-10 lg:-translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle border-none bg-black"><span class="text-white">❮</span></a>
+              <a href="#slide1" class="btn btn-circle border-none bg-black"><span class="text-white">❯</span></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-[#131318] rounded-lg w-[80%] mx-auto lg:w-1/2 lg:h-[165px] p-4 lg:p-8 space-y-[8px] lg:space-y-5 lg:absolute  lg:right-0 lg:bottom-0 mt-4 lg:m-8">
+          <h1 class="text-xl lg:text-2xl text-white font-extrabold">Meet all the heroes from the field</h1>
+          <p class="text-[#AFAFAF] font-medium text-base">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+            nullam proin.
+          </p>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class="container mx-auto">
+    <!-- First main section -->
+    <section>
+      <hr>
+      <div class="text-center">
+        <h1 class="text-2xl lg:text-4xl font-extrabold pt-6 lg:pt-9 pb-6">Professional Hockeys Club</h1>
+        <p class="text-[#AFAFAF] font-medium text-base pb-5 lg:pb-8">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br> turpis placerat dolor. Purus urna in sit
+          nullam proin.
+        </p>
+        <hr>
+      </div>
+    </section>
+    <!-- Second main Section -->
+    <section>
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 my-10 lg:mb-24 ">
+        <!-- First -->
+        <div class="text-center space-y-3">
+          <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">
+            <h1 class="text-2xl font-bold text-black">87%</h1>
+          </div>
+          <h3 class="text-xl text-[#131318] font-semibold">Prayer Facility</h3>
+          <p class="text-[#AFAFAF] font-medium text-base">Amet consectetur. <br> Condimentum dignissim adipiscing .</p>
+        </div>
+        <!-- Second -->
+        <div class="text-center space-y-3">
+          <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">
+            <h1 class="text-2xl font-bold text-black">95%</h1>
+          </div>
+          <h3 class="text-xl text-[#131318] font-semibold">Experienced Coach</h3>
+          <p class="text-[#AFAFAF] font-medium text-base">Amet consectetur. <br> Condimentum dignissim adipiscing .</p>
+        </div>
+        <!-- Third -->
+        <div class="text-center space-y-3">
+          <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">
+            <h1 class="text-2xl font-bold text-black">90%</h1>
+          </div>
+          <h3 class="text-xl text-[#131318] font-semibold">Senior Player</h3>
+          <p class="text-[#AFAFAF] font-medium text-base">Amet consectetur. <br> Condimentum dignissim adipiscing .</p>
+        </div>
+        <!-- Four -->
+        <div class="text-center space-y-3">
+          <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">
+            <h1 class="text-2xl font-bold text-black">80%</h1>
+          </div>
+          <h3 class="text-xl text-[#131318] font-semibold">Training Ground</h3>
+          <p class="text-[#AFAFAF] font-medium text-base">Amet consectetur. <br> Condimentum dignissim adipiscing .</p>
+        </div>
+      </div>
+    </section>
+    <!-- Third Section -->
+    <section>
+      
+    </section>
 
-    </main>
-    <footer>
+  </main>
+  <footer>
 
-    </footer>
+  </footer>
 </body>
 
 </html>
